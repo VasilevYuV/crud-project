@@ -1,0 +1,237 @@
+.root {
+    -fx-background-color: rgba(59, 59, 59);
+}
+/* Стили для элемента сущности */
+.entity-item {
+    -fx-background-color: rgba(59, 59, 59);
+    -fx-background-radius: 12;
+}
+
+.entity-item:hover {
+    -fx-background-color: #444444;
+    -fx-cursor: hand;
+}
+
+/* ID сущности */
+.entity-id {
+    -fx-font-family: 'JetBrains Mono', 'Consolas', monospace;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #aaaaaa;
+}
+
+
+/* Описание сущности */
+.entity-description {
+    -fx-font-family: 'Manrope', sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #cccccc;
+    -fx-wrap-text: true;
+}
+
+/* Даты создания/обновления */
+.entity-date {
+    -fx-font-family: 'Manrope', sans-serif;
+    -fx-font-size: 10px;
+    -fx-text-fill: #888888;
+    -fx-opacity: 0.7;
+}
+
+/* Кнопки в элементе сущности */
+.entity-button {
+    -fx-font-family: 'Manrope', sans-serif;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4;
+    -fx-padding: 5 10 5 10;
+    -fx-cursor: hand;
+}
+
+.update-button {
+    -fx-background-color: #4a6fa5;
+    -fx-text-fill: white;
+}
+
+.update-button:hover {
+    -fx-background-color: #5a7fb5;
+}
+
+.delete-button {
+    -fx-background-color: #a54a4a;
+    -fx-text-fill: white;
+}
+
+.delete-button:hover {
+    -fx-background-color: #b55a5a;
+}
+
+/* Кнопка добавления (+) */
+.add-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+.add-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+}
+
+.add-item {
+    -fx-background-color: rgba(59, 59, 59);
+    -fx-background-radius: 8;
+    -fx-border-color: #555555;
+    -fx-border-style: dashed;
+    -fx-border-radius: 8;
+    -fx-border-width: 2;
+}
+
+.add-item:hover {
+    -fx-background-color: #444444;
+    -fx-border-color: #666666;
+    -fx-cursor: hand;
+}
+
+/* Моноширинный шрифт для ID */
+.monospace {
+    -fx-font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+}
+
+
+.dialog-title {
+    -fx-font-family: 'Manrope', sans-serif;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.dialog-label {
+    -fx-font-family: 'Manrope', sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #cccccc;
+}
+
+.dialog-field {
+    -fx-font-family: 'Manrope', sans-serif;
+    -fx-font-size: 14px;
+    -fx-padding: 8 12 8 12;
+}
+
+.dialog-field:focused {
+    -fx-border-color: #4a6fa5;
+    -fx-border-width: 2;
+}
+
+.dialog-button {
+    -fx-font-family: 'Manrope', sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+    -fx-min-width: 80px;
+}
+
+.action-button {
+    -fx-background-color: #4a6fa5;
+    -fx-text-fill: white;
+}
+
+.action-button:hover {
+    -fx-background-color: #5a7fb5;
+}
+
+.action-button:disabled {
+    -fx-background-color: #555555;
+    -fx-text-fill: #888888;
+    -fx-cursor: default;
+}
+
+.cancel-button {
+    -fx-background-color: #555555;
+    -fx-text-fill: white;
+}
+
+.cancel-button:hover {
+    -fx-background-color: #666666;
+}
+
+.error-label {
+    -fx-font-family: 'Manrope', sans-serif;
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+}
+
+/* Кнопка закрытия (крестик) */
+.button:hover .line {
+    -fx-stroke: #ffffff;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+/* Стили для панели поиска */
+.text-field {
+    -fx-background-color: #444444;
+    -fx-text-fill: white;
+    -fx-background-radius: 4;
+    -fx-border-color: #555555;
+    -fx-border-radius: 4;
+    -fx-padding: 8 12 8 12;
+}
+
+.text-field:focused {
+    -fx-border-color: #4a6fa5;
+    -fx-border-width: 2;
+}
+
+.button {
+    -fx-background-color: #4a6fa5;
+    -fx-text-fill: white;
+    -fx-background-radius: 4;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #5a7fb5;
+}
+
+/* Пагинация */
+.pagination {
+    -fx-background-color: transparent;
+}
+
+.pagination .page {
+    -fx-background-color: #444444;
+    -fx-text-fill: white;
+}
+
+.pagination .page:hover {
+    -fx-background-color: #555555;
+}
+
+.pagination .page:selected {
+    -fx-background-color: #4a6fa5;
+}
+
+/* Метка счетчика */
+.label {
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 12px;
+}
+
+/* Имя сущности */
+.entity-name {
+    -fx-font-family: 'Manrope_Cut_008', sans-serif;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4a6fa5;
+}

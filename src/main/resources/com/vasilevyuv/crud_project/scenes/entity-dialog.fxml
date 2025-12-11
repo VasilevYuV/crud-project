@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="dialogPane" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: rgb(59,59,59); -fx-background-radius: 24; -fx-border-radius: 24; -fx-border-color: white;  -fx-padding: 20;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vasilevyuv.crud_project.controller.EntityDialogController">
+
+    <!-- Заголовок и кнопка закрытия -->
+    <HBox alignment="CENTER_LEFT" spacing="310.0">
+        <Label fx:id="dialogTitle" styleClass="dialog-title" text="Add Entity" textFill="white" />
+    </HBox>
+
+    <!-- Поля для ввода -->
+    <VBox spacing="15.0">
+        <!-- Поле Name -->
+        <VBox spacing="5.0">
+            <Label styleClass="dialog-label" text="Name" textFill="#cccccc" />
+            <TextField fx:id="nameField" promptText="Enter name (3-50 characters)" style="-fx-background-color: #444444;                               -fx-text-fill: white;                               -fx-background-radius: 4;                               -fx-border-color: #555555;                               -fx-border-radius: 4;" styleClass="dialog-field" />
+            <Label fx:id="nameError" styleClass="error-label" textFill="#ff5555" visible="false" />
+        </VBox>
+
+        <!-- Поле Description -->
+        <VBox spacing="5.0">
+            <Label styleClass="dialog-label" text="Description" textFill="#cccccc" />
+            <TextArea fx:id="descriptionField" promptText="Enter description (max 255 characters)" style="-fx-background-color: #444444;                              -fx-text-fill: white;                              -fx-background-radius: 4;                              -fx-border-color: #555555;                              -fx-border-radius: 4;" styleClass="dialog-field" />
+            <Label fx:id="descriptionError" styleClass="error-label" textFill="#ff5555" visible="false" />
+        </VBox>
+    </VBox>
+
+    <!-- Кнопки действий -->
+    <HBox alignment="CENTER_RIGHT" spacing="10.0">
+        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#handleClose" styleClass="dialog-button, cancel-button" text="Cancel" />
+        <Button fx:id="actionButton" mnemonicParsing="false" onAction="#handleAction" styleClass="dialog-button, action-button" text="Create" />
+    </HBox>
+
+</VBox>

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Manrope_Cut_008 ExtraBold';
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url('Manrope_Cut_008-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope_Cut_008 Medium';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url('Manrope_Cut_008-Medium.ttf') format('truetype');
+}
